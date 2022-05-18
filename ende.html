@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ende.css" />
+    <link rel="icon" type="image/x-icon" href="./img/Cogumelo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+    <title>Save Peach</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <h1>Localização</h1>
+        </div>
+  
+        <form id="form" class="form">
+          <div class="form-control">
+            <label for="local">Informe o CEP</label>
+            <input type="text"
+                    id="local"
+                    placeholder="Digite seu Nome..."
+                    onchange="toggleButton()" >
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+  
+          <div class="form-control">
+            <label for="street">Rua</label>
+            <input type="text"
+                    id="street"
+                    placeholder="Digite seu Email.."
+                    onchange="toggleButton()" >
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+  
+          <div class="form-control">
+            <label for="block">Bairro</label>
+            <input type="text"
+                    id="block"
+                    placeholder="Digite sua Senha..."
+                    onchange="toggleButton()" >
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <label for="city">Cidade</label>
+            <input type="text"
+                    id="city"
+                    placeholder="Confirme sua Senha..."
+                    onchange="toggleButton()" >
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          
+            <label for="unity">UF</label>
+            <input type="text"
+                    id="unity"
+                    placeholder="Confirme sua Senha..."
+                    onchange="toggleButton()" >
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+
+          <div class="form-control">
+            <label for="ibge">IBGE</label>
+            <input type="text"
+                    id="ibge"
+                    placeholder="Confirme sua Senha..."
+                    onchange="toggleButton()" >
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          
+            <label for="phone-number">DDD</label>
+            <input type="text"
+                    id="number-phone"
+                    placeholder="Confirme sua Senha..."
+                    onchange="toggleButton()" >
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+  
+          <button href="ende.html" type="submit" id="login" disabled>
+            Cadastrar
+          </button>
+        </form>
+      </div>
+  
+      <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+  
+      <script src="./index.js"></script>
+    
+</body>
+</html>
