@@ -74,7 +74,7 @@ else {
     //CEP nao Encontrado.
     limpa_formulario_cep();
     alert("CEP nao encontrado.");
-}
+    }
 }
 
 function pesquisacep(valor) {
@@ -120,3 +120,29 @@ if (cep != "") {
         limpa_formulario_cep();
     }
 };
+
+
+function setErrorFor(input, message) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector("small");
+  
+    // Adiciona a mensagem de erro
+    small.innerText = message;
+  
+    // Adiciona a classe de erro
+    formControl.className = "form-control error";
+  }
+  
+  function setSuccessFor(input) {
+    const formControl = input.parentElement;
+  
+    // Adicionar a classe de sucesso
+    formControl.className = "form-control success";
+}
+
+  function setSuccessFor(input) {
+    const formControl = input.parentElement;
+  
+    // Adicionar a classe de sucesso
+    formControl.className = "form-control success";
+}
