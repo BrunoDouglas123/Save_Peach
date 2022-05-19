@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./ende.css" />
+    <script src="./ende.js" defer></script>
     <link rel="icon" type="image/x-icon" href="./img/Cogumelo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,13 +15,14 @@
 <body>
     <div class="container">
         <div class="header">
-          <h1>Localização</h1>
+          <h1>Localizacao</h1>
         </div>
   
-        <form id="form" class="form">
+        <form id="form" class="form" action="">
           <div class="form-control">
             <label for="local">Informe o CEP</label>
             <input type="text"
+                    name="local"
                     id="local"
                     placeholder="Digite seu Nome..."
                     onchange="toggleButton()" >
@@ -52,26 +54,34 @@
           </div>
 
           <div class="form-control">
-            <label for="city">Cidade</label>
-            <input type="text"
-                    id="city"
-                    placeholder="Confirme sua Senha..."
-                    onchange="toggleButton()" >
-            <i class="fas fa-exclamation-circle"></i>
-            <i class="fas fa-check-circle"></i>
-            <small>Mensagem de erro</small>
-          
-            <label for="unity">UF</label>
-            <input type="text"
-                    id="unity"
-                    placeholder="Confirme sua Senha..."
-                    onchange="toggleButton()" >
-            <i class="fas fa-exclamation-circle"></i>
-            <i class="fas fa-check-circle"></i>
-            <small>Mensagem de erro</small>
+            <div class="form-control-campo1">
+              <div class="forme" id="for-city">
+                <label for="city">Cidade</label>
+                <input type="text"
+                        id="city"
+                        placeholder="Confirme sua Senha..."
+                        onchange="toggleButton()" >
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+              </div>
+            
+              <div id="for-uf">
+              <label for="unity">UF</label>
+              <input type="text"
+                      id="unity"
+                      placeholder="Confirme sua Senha..."
+                      onchange="toggleButton()" >
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
+            </div>
+            </div>
           </div>
 
           <div class="form-control">
+          <div class="form-control-campo2">
+            <div class="formi" id="for-ibge">
             <label for="ibge">IBGE</label>
             <input type="text"
                     id="ibge"
@@ -80,16 +90,20 @@
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <small>Mensagem de erro</small>
-          
+          </div>
+            
+            <div id="for-number">
             <label for="phone-number">DDD</label>
             <input type="text"
-                    id="number-phone"
+                    id="number"
                     placeholder="Confirme sua Senha..."
                     onchange="toggleButton()" >
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <small>Mensagem de erro</small>
           </div>
+          </div>
+        </div>
   
           <button href="ende.html" type="submit" id="login" disabled>
             Cadastrar
@@ -98,8 +112,6 @@
       </div>
   
       <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
-  
-      <script src="./index.js"></script>
     
 </body>
 </html>
