@@ -23,6 +23,15 @@ function checkInputs() {
   const ibgeValue = ibge.value;
   const numberValue = number.value;
 
+    //Exigência de username
+    if (usernameValue === "") {
+        setErrorFor(cep, "O CEP é obrigatório.");
+    } else if (cepValue.length < 3 || usernameValue.length > 8) {
+        setErrorFor(cep, "CEP invalido.");
+    } else {
+        setSuccessFor(cep);
+    }
+
   //Confirmação de sucesso do formulario
   const formControls = form.querySelectorAll(".form-control");
 
