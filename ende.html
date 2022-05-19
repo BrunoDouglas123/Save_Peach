@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./ende.css" />
     <script src="./ende.js" defer></script>
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="./img/Cogumelo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +16,7 @@
 <body>
     <div class="container">
         <div class="header">
-          <h1>Localizacao</h1>
+          <h1>🍄 Localizacao 🍄</h1>
         </div>
   
         <form id="form" class="form" action="">
@@ -25,6 +26,7 @@
                     name="local"
                     id="local"
                     placeholder="Digite seu Nome..."
+                    onkeypress='return filtroTeclas(event)'
                     onchange="toggleButton()" >
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
@@ -105,13 +107,11 @@
           </div>
         </div>
   
-          <button href="ende.html" type="submit" id="login" disabled>
-            Cadastrar
-          </button>
+        <button href="ende.html" type="submit" id="login" disabled>
+          Cadastrar
+        </button>
         </form>
       </div>
-  
-      <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
     
 </body>
 </html>
