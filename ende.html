@@ -25,9 +25,13 @@
             <input type="text"
                     name="local"
                     id="local"
+                    value=""
+                    maxlength="9"
                     placeholder="Digite seu Nome..."
+                    onblur="pesquisacep(this.value);"
                     onkeypress='return filtroTeclas(event)'
-                    onchange="toggleButton()" >
+                    onchange="toggleButton()"
+                    required >
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <small>Mensagem de erro</small>
@@ -36,9 +40,11 @@
           <div class="form-control">
             <label for="street">Rua</label>
             <input type="text"
-                    id="street"
+                    name="rua"
+                    id="rua"
                     placeholder="Digite seu Email.."
-                    onchange="toggleButton()" >
+                    onchange="toggleButton()"
+                    required >
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <small>Mensagem de erro</small>
@@ -47,9 +53,11 @@
           <div class="form-control">
             <label for="block">Bairro</label>
             <input type="text"
-                    id="block"
+                    name="bairro"
+                    id="bairro"
                     placeholder="Digite sua Senha..."
-                    onchange="toggleButton()" >
+                    onchange="toggleButton()"
+                    required >
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <small>Mensagem de erro</small>
@@ -60,9 +68,11 @@
               <div class="forme" id="for-city">
                 <label for="city">Cidade</label>
                 <input type="text"
-                        id="city"
+                        name="cidade"
+                        id="cidade"
                         placeholder="Confirme sua Senha..."
-                        onchange="toggleButton()" >
+                        onchange="toggleButton()"
+                        required >
                 <i class="fas fa-exclamation-circle"></i>
                 <i class="fas fa-check-circle"></i>
                 <small>Mensagem de erro</small>
@@ -71,9 +81,11 @@
               <div id="for-uf">
               <label for="unity">UF</label>
               <input type="text"
-                      id="unity"
+                      name="uf"
+                      id="uf"
                       placeholder="Confirme sua Senha..."
-                      onchange="toggleButton()" >
+                      onchange="toggleButton()"
+                      required >
               <i class="fas fa-exclamation-circle"></i>
               <i class="fas fa-check-circle"></i>
               <small>Mensagem de erro</small>
@@ -86,9 +98,11 @@
             <div class="formi" id="for-ibge">
             <label for="ibge">IBGE</label>
             <input type="text"
+                    name="ibge"
                     id="ibge"
                     placeholder="Confirme sua Senha..."
-                    onchange="toggleButton()" >
+                    onchange="toggleButton()"
+                    required >
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <small>Mensagem de erro</small>
@@ -97,9 +111,11 @@
             <div id="for-number">
             <label for="phone-number">DDD</label>
             <input type="text"
-                    id="number"
+                    name="ddd"
+                    id="ddd"
                     placeholder="Confirme sua Senha..."
-                    onchange="toggleButton()" >
+                    onchange="toggleButton()"
+                    required >
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <small>Mensagem de erro</small>
